@@ -1,0 +1,43 @@
+
+
+<!-- form handling -->
+<form action="/api/users" id="add_user" method="post">
+    <div class="new_user">
+        <div class="form-group">
+            <label for="name" class="text-light">Name</label>
+            <input type="hidden" name="id" value="">
+            <input type="text" name="name" value="" placeholder="Jasprit Bumrah">
+        </div>
+        <div class="form-group">
+            <label for="Email" class="text-light">Email</label>
+            <input type="email" name="email" value="" placeholder="jasprit@bcci.com">
+        </div>
+        <div class="form-group">
+            <label for="phone" class="text-light">Phone Number</label>
+            <input type="tel" name="phone" value="" placeholder="9988776655">
+        </div>
+        <div class="form-group">
+            <label for="gender" class="text-light">Gender</label>
+                <div class="radio inline">
+                    <input type="radio" name="gender" value="Male">
+                    <label for="gender" class=".radio-label">Male</label>
+                </div>
+                <div class="radio inline">
+                    <input type="radio" name="gender" value="Female">
+                    <label for="gender" class=".radio-label">Female</label>
+                </div>
+        </div>
+        <div class="form-group">
+            <label for="membership" class="text-light">Membership(In months)</label>
+            <input type="number" name="membership" value="" placeholder="0">
+        </div>
+        <div class="form-group">
+            <label for="membershipvalidupto" class="text-light">Membership valid upto</label>
+            <input type="date" name="membershipvalidupto" value="">
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn text-dark update">Save</button>
+        </div>
+    </div>
+</form>
